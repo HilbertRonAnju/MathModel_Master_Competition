@@ -15,6 +15,13 @@
 \usepackage{amssymb}		% 符号宏包
 \usepackage{bm}				% 处理数学公式中的黑斜体的宏包
 \usepackage{lmodern}		% 数学公式字体
+\usepackage{ragged2e}
+\usepackage{xltabular}
+\newcolumntype{L}{>{\centering\arraybackslash}X}
+%---------------------------------------------------------------%
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{float}
 \usepackage[amsmath,thmmarks,hyperref]{ntheorem}	% 定理类环境宏包
 \usepackage[hang]{subfigure}						% 图形或表格并排排列
 \usepackage[subfigure]{ccaption}					% 支持双语标题
@@ -24,6 +31,7 @@
 %\usepackage{xltxtra}		% 提供了针对XeTeX的改进，自动调用xunicode宏包
 
 % 生成有书签的 pdf 及其开关, 该宏包应放在所有宏包的最后, 宏包之间有冲突
+
 \usepackage[xetex,
             bookmarksnumbered=true,
             bookmarksopen=true,
@@ -70,14 +78,10 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
-\setCJKmainfont[Path=fonts/]{SimSun.ttf}
+\setCJKmainfont{SimSun.ttf}
 \setCJKsansfont{SimHei.ttf}
-\setCJKfamilyfont{hei}[Path=fonts/]{SimHei.ttf}
+\setCJKfamilyfont{hei}{SimHei.ttf}
 \newcommand{\hei}{\CJKfamily{hei}}
-\setCJKfamilyfont{Huawei}[Path=fonts/]{HuaWei.TTF}
-\newcommand{\huawei}{\CJKfamily{Huawei}}
-\setCJKfamilyfont{simli}[Path=fonts/]{SIMLI.TTF}
-\newcommand{\simli}{\CJKfamily{simli}}
 
 % 外文文献pdf插入
 \usepackage{pdfpages}
